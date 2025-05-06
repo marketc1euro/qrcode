@@ -1,4 +1,3 @@
-
 import React, { ReactNode } from 'react';
 import Navbar from './Navbar';
 import { useAuth } from '@/contexts/AuthContext';
@@ -8,7 +7,7 @@ interface MainLayoutProps {
 }
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
-  const { currentUser } = useAuth();
+  const { currentUser: _ } = useAuth();
   
   return (
     <div className="min-h-screen bg-background">
